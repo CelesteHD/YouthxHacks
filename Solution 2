@@ -17,9 +17,9 @@ HydrogenP = 0 #increment of HydrogenP = Hydrogen Peroxide will be secreted into 
 AIscan +=1
 if AlgaeDetected == 1:
   AlgaePresent = True
+if oxygenLevel <5: #Oxygen level <5ppm, aeration occurs
+   aeration +=1
 while AlgaePresent == True:
-  if oxygenLevel <5: #Oxygen level <5ppm, aeration occurs
-    aeration +=1
   HydrogenP +=1 #hydrogen peroxide will released upon the detection of algae bloom.
   AlgaePresent = False
  
