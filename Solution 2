@@ -1,2 +1,5 @@
 #Solution 2; targetting plankton bloom in fish farms which reduces food safety and sustainability.
-#
+#To target this issue, we have come up with a 3 phase solution that detects, prevent and remove.
+#With the use of technology, we apply these 3 phases by firstly, detecting: using a sensor to detect the temperature and oxygen levels. At warm temperatures and low 
+#oxygen levels, Plankton bloom is likely to occur. Therefore when these conditions occur, prevention is needed. When 20-30 degrees celcius & -- Oxygen levels are detected,
+#a ?? can be used to prevent further plankton bloom. When prevention is complete, removal phase can occur.
