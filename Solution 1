@@ -1,0 +1,40 @@
+#manual pollination -> pollination using technology
+#2 phase of machines 
+#first phase ; input the number of male plants and allow them to move through the first machine on a conveyer belt. When the plant is detected by the machine, it will
+#use the cotton swab to pass through the male parts of the plant so that the swab will have pollen grains on it. Once it is done, the swab will be passed to phase 2,
+#another machine which will take the swab and dab it on to the stigma of the female parts of the plant so that it can be pollinated. 
+#the number of male and female plants are to be inputted by the user of the machines. A simple algorithmn to demonstrate how it works is below in python.
+
+#Phase 1; machine for male plants. ensure all plants are on the conveyer belt
+
+
+MalePlants = int(input("Enter the number of male plants going through the machine."))
+Conveyer = 0 #every increment of Conveyer = Conveyer will move 
+dab = 0 #every increment of dab = the machine will dab the cotton swab on to the male plant
+pass = 0 #passes it on to machine 2 ( also counts the number of cotton swabs with pollen available to use on machine 2 )
+while Conveyer < MalePlants:
+  dab +=1 #machine dabs the cotton swab onto male plant
+  pass +=1
+  Conveyer +=1
+
+#Phase 2; machine for female plants: where pollination occurs. Ensure all female plants are on the conveyer belt.
+
+FemalePlants = int(input("Enter number of female plants going through the machine."))
+Conveyer = 0 #every increment = move the conveyer belt
+dab = 0 #dab the cotton swab with pollens on to the stigma of the plant.
+dispose = 0 #disposes the cotton swab into a small compartment of the machine
+print("The number of pollinations that can be made is", pass)
+for i in range(pass):
+  dab +=1
+  dispose +=1
+  Conveyer +=1
+
+
+  
+  
+  
+  
+  
+  
+  
+  
