@@ -6,21 +6,22 @@
 
 #second function (female plants are placed on conveyor belt)
 #U+2698 will take the cotton swab and dab it onto the stigma (female part of the plant where fertilisation can occur) of the female plant so that it can be pollinated.
-#the number of male and female plants are to be inputted by the user of the machines. A simple algorithmn to demonstrate how it works is below in python.
+#the number of male and female plants are to be inputted by the user of the machines.
+#A simple algorithm to demonstrate how it works is below in python.
 
-#Phase 1; machine for male plants. ensure all plants are on the conveyer belt ( FUNCTION 1 )
+#Function 1; U+2698_1 to obtain pollen grains from male plants. Ensure all plants are on the conveyer belt ( FUNCTION 1 )
 
 
 MalePlants = int(input("Enter the number of male plants going through the machine."))
 Conveyer = 0 #every increment of Conveyer = Conveyer will move 
 dab = 0 #every increment of dab = the machine will dab the cotton swab on to the male plant
-pass = 0 #passes it on to machine 2 ( also counts the number of cotton swabs with pollen available to use on machine 2 )
+pass = 0 #passes it to U+2698_2 ( also counts the number of cotton swabs with pollen available to use on U+2698_2 )
 while Conveyer < MalePlants:
   dab +=1 #machine dabs the cotton swab onto male plant
   pass +=1
   Conveyer +=1
 
-#Phase 2; machine for female plants: where pollination occurs. Ensure all female plants are on the conveyer belt. ( FUNCTION 2 )
+#Function 2; U+2698_2 to transfer pollen grains to female plants. Ensure all female plants are on the conveyer belt. ( FUNCTION 2 )
 
 FemalePlants = int(input("Enter number of female plants going through the machine."))
 Conveyer = 0 #every increment = move the conveyer belt
@@ -35,8 +36,8 @@ for i in range(pass):
 
 
 
-#With the use of technology to help make pollination more efficient, pollination will be able to occur at a faster pace and thus would allow a larger number of crops
-#to be produced in a shorter number of time. This will increase the sustainability of crops and thus increases food security and sustainability.
+#With the use of technology to help make pollination more efficient, pollination will be able to occur at a faster pace and thus would allow a larger yield of crops
+#to be produced in a shorter amount of time. This will increase the sustainability of our crops and thus increase food security.
 
   
   
