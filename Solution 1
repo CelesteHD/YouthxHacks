@@ -1,8 +1,11 @@
 #manual pollination -> pollination using technology
-#2 phase of machines 
-#first phase ; input the number of male plants and allow them to move through the first machine on a conveyer belt. When the plant is detected by the machine, it will
-#use the cotton swab to pass through the male parts of the plant so that the swab will have pollen grains on it. Once it is done, the swab will be passed to phase 2,
-#another machine which will take the swab and dab it on to the stigma of the female parts of the plant so that it can be pollinated. 
+#2 functions of U+2698
+#first function (male plants are placed on conveyor belt) ; input the total number of male plants and allow them to move through U+2698 on a conveyer belt. When a plant is detected by the machine, it will
+#use the cotton swab to swab the anthers (male part of the plant where the pollens are) of the plant. The pollen grains on the anthers is now transferred to the cotton swabs.
+#Once funcntion 1 is achieved, U+2698 will start completing function 2
+
+#second function (female plants are placed on conveyor belt)
+#U+2698 will take the cotton swab and dab it onto the stigma (female part of the plant where fertilisation can occur) of the female plant so that it can be pollinated.
 #the number of male and female plants are to be inputted by the user of the machines. A simple algorithmn to demonstrate how it works is below in python.
 
 #Phase 1; machine for male plants. ensure all plants are on the conveyer belt ( FUNCTION 1 )
