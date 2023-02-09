@@ -13,25 +13,25 @@
 
 
 MalePlants = int(input("Enter the number of male plants going through the machine."))
-Conveyer = 0 #every increment of Conveyer = Conveyer will move 
+ConveyerM = 0 #every increment of Conveyer = Conveyer will move for male plants
 dab = 0 #every increment of dab = the machine will dab the cotton swab on to the male plant
-pass = 0 #passes it to U+2698_2 ( also counts the number of cotton swabs with pollen available to use on U+2698_2 )
+turn = 0 #passes it to U+2698_2 ( turns around to the conveyer belt with female plants )
 while Conveyer < MalePlants:
   dab +=1 #machine dabs the cotton swab onto male plant
-  pass +=1
-  Conveyer +=1
+  turn +=1 #turns to the female section
+  ConveyerM +=1
 
 #Function 2; U+2698_2 to transfer pollen grains to female plants. Ensure all female plants are on the conveyer belt. ( FUNCTION 2 )
 
 FemalePlants = int(input("Enter number of female plants going through the machine."))
-Conveyer = 0 #every increment = move the conveyer belt
+ConveyerF = 0 #every increment = move the conveyer belt
 dab = 0 #dab the cotton swab with pollens on to the stigma of the plant.
 dispose = 0 #disposes the cotton swab into a small compartment of the machine
-print("The number of pollinations that can be made is", pass)
-for i in range(pass):
+while FemalePlants > 0 and turn == 1:
   dab +=1
   dispose +=1
-  Conveyer +=1
+  ConveyerF +=1
+  turn = 0
 
 
 
