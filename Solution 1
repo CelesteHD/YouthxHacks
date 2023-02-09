@@ -2,7 +2,8 @@
 #2 functions of U+2698
 #first function (male plants are placed on conveyor belt) ; input the total number of male plants and allow them to move through U+2698 on a conveyer belt. When a plant is detected by the machine, it will
 #use the cotton swab to swab the anthers (male part of the plant where the pollens are) of the plant. The pollen grains on the anthers is now transferred to the cotton swabs.
-#Once funcntion 1 is achieved, U+2698 will start completing function 2
+#The machine will turn itself to another conveyer belt with the female plants and dab the cotton swab that contains pollen grains on the stigma of the female plant
+#for it to be pollinated.
 
 #second function (female plants are placed on conveyor belt)
 #U+2698 will take the cotton swab and dab it onto the stigma (female part of the plant where fertilisation can occur) of the female plant so that it can be pollinated.
