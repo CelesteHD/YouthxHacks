@@ -1,39 +1,43 @@
 #manual pollination -> pollination using technology
-#2 phase of machines 
-#first phase ; input the number of male plants and allow them to move through the first machine on a conveyer belt. When the plant is detected by the machine, it will
-#use the cotton swab to pass through the male parts of the plant so that the swab will have pollen grains on it. Once it is done, the swab will be passed to phase 2,
-#another machine which will take the swab and dab it on to the stigma of the female parts of the plant so that it can be pollinated. 
-#the number of male and female plants are to be inputted by the user of the machines. A simple algorithmn to demonstrate how it works is below in python.
+#2 functions of U+2698 (stands for a flower symbol in unicode)
+#first function (male plants are placed on conveyor belt) ; input the total number of male plants and allow them to move through U+2698 on a conveyer belt. When a plant is detected by the machine, it will
+#use the cotton swab to swab the anthers (male part of the plant where the pollens are) of the plant. The pollen grains on the anthers is now transferred to the cotton swabs.
+#The machine will turn itself to another conveyer belt with the female plants and dab the cotton swab that contains pollen grains on the stigma of the female plant
+#for it to be pollinated.
 
-#Phase 1; machine for male plants. ensure all plants are on the conveyer belt
+#second function (female plants are placed on conveyor belt)
+#U+2698 will take the cotton swab and dab it onto the stigma (female part of the plant where fertilisation can occur) of the female plant so that it can be pollinated.
+#the number of male and female plants are to be inputted by the user of the machines.
+#A simple algorithm to demonstrate how it works is below in python.
+
+#Function 1; U+2698_1 to obtain pollen grains from male plants. Ensure all plants are on the conveyer belt ( FUNCTION 1 )
 
 
 MalePlants = int(input("Enter the number of male plants going through the machine."))
-Conveyer = 0 #every increment of Conveyer = Conveyer will move 
+ConveyerM = 0 #every increment of Conveyer = Conveyer will move for male plants
 dab = 0 #every increment of dab = the machine will dab the cotton swab on to the male plant
-pass = 0 #passes it on to machine 2 ( also counts the number of cotton swabs with pollen available to use on machine 2 )
-while Conveyer < MalePlants:
+turn = 0 #turn around for U+2698_2  to take place( turns around to the conveyer belt with female plants )
+while Conveyer < MalePlants and turn == 0:
   dab +=1 #machine dabs the cotton swab onto male plant
-  pass +=1
-  Conveyer +=1
+  turn +=1 #turns to the female section
+  ConveyerM +=1
 
-#Phase 2; machine for female plants: where pollination occurs. Ensure all female plants are on the conveyer belt.
+#Function 2; U+2698_2 to transfer pollen grains to female plants. Ensure all female plants are on the conveyer belt. ( FUNCTION 2 )
 
 FemalePlants = int(input("Enter number of female plants going through the machine."))
-Conveyer = 0 #every increment = move the conveyer belt
+ConveyerF = 0 #every increment = move the conveyer belt
 dab = 0 #dab the cotton swab with pollens on to the stigma of the plant.
-dispose = 0 #disposes the cotton swab into a small compartment of the machine
-print("The number of pollinations that can be made is", pass)
-for i in range(pass):
+while FemalePlants > 0 and turn == 1:
   dab +=1
-  dispose +=1
-  Conveyer +=1
+  ConveyerF +=1
+  turn = 0
 
 
 
 
-#With the use of technology to help make pollination more efficient, pollination will be able to occur at a faster pace and thus would allow a larger number of crops
-#to be produced in a shorter number of time. This will increase the sustainability of crops and thus increases food security and sustainability.
+#With the use of technology to help make pollination more efficient, pollination will be able to occur at a faster pace and thus would allow a larger yield of crops
+#to be produced in a shorter amount of time. This will increase the sustainability of our crops and thus increase food security.
+#extra: in order to ensure that cotton swabs are not wasted, 1 swab will be used for the whole process of pollinating multiple plants.
 
   
   
