@@ -5,7 +5,7 @@
 #another machine which will take the swab and dab it on to the stigma of the female parts of the plant so that it can be pollinated. 
 #the number of male and female plants are to be inputted by the user of the machines. A simple algorithmn to demonstrate how it works is below in python.
 
-#Phase 1; machine for male plants. ensure all plants are on the conveyer belt
+#Phase 1; machine for male plants. ensure all plants are on the conveyer belt ( FUNCTION 1 )
 
 
 MalePlants = int(input("Enter the number of male plants going through the machine."))
@@ -17,7 +17,7 @@ while Conveyer < MalePlants:
   pass +=1
   Conveyer +=1
 
-#Phase 2; machine for female plants: where pollination occurs. Ensure all female plants are on the conveyer belt.
+#Phase 2; machine for female plants: where pollination occurs. Ensure all female plants are on the conveyer belt. ( FUNCTION 2 )
 
 FemalePlants = int(input("Enter number of female plants going through the machine."))
 Conveyer = 0 #every increment = move the conveyer belt
