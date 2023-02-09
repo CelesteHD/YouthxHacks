@@ -1,6 +1,30 @@
-#Solution 2; targetting algae bloom in fish farms which reduces food safety and sustainability.
-#To target this issue, we have come up with a 3 phase solution that detects, prevent and remove.
-#With the use of technology, we apply these 3 phases by firstly, detecting: using a sensor to detect the temperature and oxygen levels. At warm temperatures and low 
-#oxygen levels, algae bloom is likely to occur. Therefore when these conditions occur, prevention is needed. When 20-30 degrees celcius & -- Oxygen levels are detected,
-#a ?? can be used to prevent further algae bloom. When prevention is complete, removal phase can occur.
+#Solution 2; targetting algae bloom in fish farms which reduces food safety and sustainability. Algae bloom promotes the growth of phytoplankton which harms the fishes.
+#To target this issue, we have come up with a 3 phase solution that capture, contain and cleans.
+#With the use of technology, we apply these 3 phases by firstly, capture: Monitoring of oxygen levels and presence of algae (via AI). Secondly, containing by 
+#improving aeration of water to restore oxygen levels. Lastly, cleaning by the release of hydrogen peroxide to suppress algae growth.
+#With these 3 phases, we hope to increase the sustainability of fishes in the fish farm which would lead to an increase in fish produce for consumption.
+#this will allow us to increase the food supply and thus allow food security.
+
+#The following lines of code is a basic algorithm of how the AI could work. ( Coded using Python )
+
+fishes = int(input("Enter number of fishes in the tank:"))
+oxygenLevel = 15 # 5-20 ppm is at normal level. Input of OxygenLevel will be retrieved through the sensor.
+AlgaeDetected = 0 #+1 when algae detected
+AlgaePresent = False #If algae is present after detection, it will turn True automatically
+AIscan = 0 # every increment = scan the tank once
+aeration= 0 #increment of Aeration = process will take place once
+HydrogenP = 0 #increment of HydrogenP = Hydrogen Peroxide will be secreted into the waters at a certain amount
+AIscan +=1
+if AlgaeDetected == 1:
+  AlgaePresent = True
+while AlgaePresent == True:
+  if oxygenLevel <5: #Oxygen level <5ppm, aeration occurs
+    aeration +=1
+  HydrogenP +=1 #hydrogen peroxide will released upon the detection of algae bloom.
+  AlgaePresent = False
+ 
+  
+
+
+
 
