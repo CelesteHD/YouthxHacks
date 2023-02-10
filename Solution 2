@@ -4,6 +4,9 @@
 #improving aeration of water to restore oxygen levels. Lastly, cleaning by the release of hydrogen peroxide to suppress algae growth.
 #With these 3 phases, we hope to increase the sustainability of fishes in the fish farm which would lead to an increase in fish produce for consumption.
 #this will allow us to increase the food supply and thus allow food security.
+#Aeration will occur when either the oxygen levels become < 5ppm or when Algae is detected by the AI system. Whilst Hydrogen peroxide will be secreted into the waters 
+#as long as algae is detected by the AI system. This will reduce algae bloom and keep the waters clean thus allowing a larger supply of fresh fishes to be available
+#for consumption.
 
 #The following lines of code is a basic algorithm of how the AI could work. ( Coded using Python )
 
@@ -17,9 +20,10 @@ HydrogenP = 0 #increment of HydrogenP = Hydrogen Peroxide will be secreted into 
 AIscan +=1
 if AlgaeDetected == 1:
   AlgaePresent = True
-if oxygenLevel <5: #Oxygen level <5ppm, aeration occurs
+if oxygenLevel <5 or AlgaePresent == True: #Oxygen level <5ppm OR Algae is present, Aeration will occur.
    aeration +=1
-while AlgaePresent == True:
+   AlgaePresent = False
+if AlgaePresent == True:
   HydrogenP +=1 #hydrogen peroxide will released upon the detection of algae bloom.
   AlgaePresent = False
  
