@@ -20,9 +20,8 @@ greenclean = 0 #increment of greenclean = greenclean granular will be secreted i
 AIscan +=1
 if AlgaeDetected == 1:
   AlgaePresent = True
-if oxygenLevel <5 or AlgaePresent == True: #Oxygen level <5ppm OR Algae is present, Aeration will occur.
+if oxygenLevel <5: #Oxygen level <5ppm, Aeration will occur.
    aeration +=1
-   AlgaePresent = False
 if AlgaePresent == True:
   greenclean +=1 #greenclean granular will released upon the detection of algae bloom.
   AlgaePresent = False
