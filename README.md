@@ -7,3 +7,4 @@ We are targetting 2 issues regarding food security. Firstly, manual pollination.
 
 
 Edit: OUR IDEA WON TOP 5 IN YOUTHXHACKS 2023!!!
+original owner of all source codes; done and written by celeste chan. no copywrite please.
