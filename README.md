@@ -6,3 +6,4 @@ In YouthxHacks 2023, theme on food security, our group focus is to ensure food s
 We are targetting 3 issues regarding food security. Firstly, manual pollination. Secondly, algae bloom which promotes the growth of phytoplankton.
 
 Edit: OUR IDEA WON TOP 5 IN YOUTHXHACKS 2023!!!
+original owner of all source codes; done and written by celeste chan. no copywrite please.
