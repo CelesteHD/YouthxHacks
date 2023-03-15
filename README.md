@@ -11,3 +11,4 @@ Thank you ! :D
 9/2/23 - 10/2/23
 
 Edit: OUR IDEA WON TOP 5 IN YOUTHXHACKS 2023!!!
+original owner of all source codes; done and written by celeste chan. no copywrite please.
